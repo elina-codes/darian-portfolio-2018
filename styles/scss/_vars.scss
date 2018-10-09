@@ -1,17 +1,23 @@
-$color-primary: #228deb;
+$color-primary: #4285f4;
+$color-primary-light: lighten($color-primary, 30%);
+$color-grey: #9c9c9c;
 $color-grey-light: #f2f2f2;
-$color-black: #333;
+$color-black: #111;
 
 $font-family-headings: "Teko", sans-serif;
 $font-family-main: "Roboto Slab", serif;
 
-$font-size-xxl: 64px;
+$font-size-xxl: 140px;
 $font-size-xl: 64px;
 $font-size-lg: 36px;
-$font-size-md: 24px;
+$font-size-md: 21px;
 $font-size-sm: 18px;
-$font-size-xs: 14px;
-$font-size-xxs: 12px;
+$font-size-xs: 16px;
 
-$section-width: 1440px;
+$section-width: 1800px;
 $content-width: 800px;
+
+// media queries
+$screen-large: "only screen and (max-width: 1600px)";
+$screen-medium: "only screen and (max-width: 1024px)";
+$screen-small: "only screen and (max-width: 800px)";

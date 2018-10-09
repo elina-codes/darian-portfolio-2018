@@ -1,0 +1,27 @@
+#what-i-do {
+    img {
+        max-height: 100px;
+        max-width: 200px;
+        display: block;
+        margin: 0 auto 50px;
+
+        @media #{$screen-medium} {
+            margin-bottom: 20px;
+        }
+    }
+
+    .grid {
+        grid-column-gap: 80px;
+
+        @media #{$screen-medium} {
+            display: block;
+        }
+
+        &__item {
+            @media #{$screen-medium} {
+                margin: 0 auto 40px;
+                max-width: 600px;
+            }
+        }
+    }
+}

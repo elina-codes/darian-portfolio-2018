@@ -1,4 +1,8 @@
 section {
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
     &:nth-child(odd) {
         background-color: $color-grey-light;
     }
@@ -6,5 +10,16 @@ section {
 
 .wrapper {
     max-width: $section-width;
-    padding: 10%;
+    padding: 100px 10%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+
+    &__item {
+        color: inherit;
+    }
 }

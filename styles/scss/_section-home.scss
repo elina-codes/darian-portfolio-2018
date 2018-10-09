@@ -1,0 +1,24 @@
+#home {
+    background-image: url("../../images/darian_bg.jpg");
+    background-color: $color-primary;
+    background-blend-mode: multiply;
+    color: white;
+    text-align: right;
+}
+
+.home {
+    &__title {
+        text-align: inherit;
+        margin-bottom: 0;
+        line-height: 1;
+        font-weight: 500;
+        color: inherit;
+    }
+    &__subtitle {
+        text-align: inherit;
+        line-height: 1;
+        font-weight: 100;
+        color: inherit;
+        margin-bottom: 0;
+    }
+}

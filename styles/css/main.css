@@ -130,64 +130,264 @@ table {
 * {
   box-sizing: border-box; }
 
-h1 {
-  font-size: 64px;
+h1,
+.h1 {
+  font-size: 140px;
   font-family: "Teko", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: inherit; }
+  @media only screen and (max-width: 1600px) {
+    h1,
+    .h1 {
+      font-size: 76px; } }
 
-h2 {
+h2,
+.h2 {
   font-size: 64px;
   font-family: "Teko", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  margin-bottom: 0.6em; }
+  margin-bottom: 0.8em;
+  color: inherit;
+  text-align: center; }
+  @media only screen and (max-width: 1024px) {
+    h2,
+    .h2 {
+      font-size: 46px; } }
 
-h3 {
+h3,
+.h3 {
   font-size: 36px;
-  font-family: "Teko", sans-serif; }
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 0.6em;
+  color: inherit; }
+  @media only screen and (max-width: 1024px) {
+    h3,
+    .h3 {
+      font-size: 30px; } }
 
-h4 {
-  font-size: 24px;
-  font-family: "Teko", sans-serif; }
+h4,
+.h4 {
+  font-size: 21px;
+  font-family: "Teko", sans-serif;
+  margin-bottom: inherit;
+  line-height: inherit;
+  color: #9c9c9c; }
 
-h5 {
+h5,
+.h5 {
   font-size: 18px; }
 
-h6 {
-  font-size: 14px; }
+h6,
+.h6 {
+  font-size: 16px; }
 
 p:not(:last-child) {
   margin-bottom: 1em; }
 
 a {
-  color: #228deb;
+  color: #4285f4;
   text-decoration: none; }
 
 body {
   font-family: "Roboto Slab", serif;
-  font-size: 24px;
   line-height: 1.8;
   font-weight: 300;
-  color: #333; }
+  color: #111;
+  font-size: 21px; }
+  @media only screen and (max-width: 1600px) {
+    body {
+      font-size: 18px; } }
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 16px; } }
 
-section:nth-child(odd) {
-  background-color: #f2f2f2; }
+img {
+  display: block;
+  max-width: 100%; }
+
+section {
+  background-position: center center;
+  background-size: cover;
+  text-align: center; }
+  section:nth-child(odd) {
+    background-color: #f2f2f2; }
 
 .wrapper {
-  max-width: 1440px;
-  padding: 10%; }
+  max-width: 1800px;
+  padding: 100px 10%;
+  margin: 0 auto; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px; }
+  .grid__item {
+    color: inherit; }
+
+body {
+  margin-top: 60px; }
+
+header {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #f2f2f2;
+  z-index: 9; }
 
 nav {
   display: flex;
   letter-spacing: 3px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  height: 60px; }
   nav a {
     font-family: "Teko", sans-serif;
     color: inherit;
-    display: block;
-    padding: 10px 30px; }
-    nav a.active {
-      color: #228deb; }
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    nav a:before {
+      content: "";
+      width: 0;
+      border-top: 10px solid #d3e2fc;
+      position: absolute;
+      bottom: 20px;
+      z-index: -1;
+      left: 36px;
+      transition: all 0.2s ease; }
+    nav a.active:before, nav a:hover:before, nav a:focus:before {
+      content: "";
+      width: calc(100% - 60px); }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx1QkFBdUIiLCJmaWxlIjoibWFpbi5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCBcInZlbmRvci9yZXNldFwiO1xuIl19 */
+#home {
+  background-image: url("../../images/darian_bg.jpg");
+  background-color: #4285f4;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: right; }
+
+.home__title {
+  text-align: inherit;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 500;
+  color: inherit; }
+
+.home__subtitle {
+  text-align: inherit;
+  line-height: 1;
+  font-weight: 100;
+  color: inherit;
+  margin-bottom: 0; }
+
+#what-i-do img {
+  max-height: 100px;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 50px; }
+  @media only screen and (max-width: 1024px) {
+    #what-i-do img {
+      margin-bottom: 20px; } }
+
+#what-i-do .grid {
+  grid-column-gap: 80px; }
+  @media only screen and (max-width: 1024px) {
+    #what-i-do .grid {
+      display: block; } }
+  @media only screen and (max-width: 1024px) {
+    #what-i-do .grid__item {
+      margin: 0 auto 40px;
+      max-width: 600px; } }
+
+@media only screen and (max-width: 1024px) {
+  .work__grid {
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 800px) {
+  .work__grid {
+    grid-template-columns: 1fr; } }
+
+.work__grid__item {
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); }
+  .work__grid__item__details {
+    padding: 20px;
+    text-align: center; }
+  .work__grid__item h3 {
+    margin: 0;
+    line-height: 1; }
+  .work__grid__item p {
+    font-size: 18px; }
+
+#experience {
+  text-align: left; }
+
+.experience-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 20px; }
+
+.experience-item {
+  grid-template-columns: 2fr 4fr; }
+  @media only screen and (max-width: 800px) {
+    .experience-item {
+      display: block; } }
+  .experience-item:not(:last-child) {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f2f2f2; }
+    @media only screen and (max-width: 800px) {
+      .experience-item:not(:last-child) {
+        margin-bottom: 30px;
+        padding-bottom: 30px; } }
+  .experience-item__date {
+    line-height: 1.2;
+    margin-bottom: 0.5em; }
+    @media only screen and (max-width: 800px) {
+      .experience-item__date {
+        display: inline-block; } }
+  .experience-item__company {
+    line-height: 1;
+    position: relative;
+    display: inline-block; }
+    @media only screen and (max-width: 800px) {
+      .experience-item__company {
+        display: inline-block;
+        font-size: 21px;
+        opacity: 0.8; }
+        .experience-item__company:before {
+          content: "|";
+          margin-right: 10px;
+          margin-left: 10px;
+          color: #f2f2f2;
+          border: none; } }
+  .experience-item__position {
+    line-height: 1;
+    margin-bottom: 0.2em;
+    position: relative;
+    display: inline-block; }
+    .experience-item__position:before {
+      content: "";
+      width: 98%;
+      border-top: 10px solid #d3e2fc;
+      position: absolute;
+      bottom: 10%;
+      z-index: -1;
+      left: 5%;
+      transition: all 0.2s ease; }
+  .experience-item__duties {
+    font-size: 18px; }
+    @media only screen and (max-width: 1024px) {
+      .experience-item__duties {
+        font-size: 16px; } }
+
+footer {
+  background: #111;
+  color: white; }

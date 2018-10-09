@@ -1,17 +1,50 @@
+body {
+    margin-top: 60px;
+}
+
+header {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid $color-grey-light;
+    z-index: 9;
+}
+
 nav {
     display: flex;
     letter-spacing: 3px;
     font-weight: 400;
     text-transform: uppercase;
+    height: 60px;
 
     a {
         font-family: $font-family-headings;
         color: inherit;
-        display: block;
         padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        position: relative;
 
-        &.active {
-            color: $color-primary;
+        &:before {
+            content: "";
+            width: 0;
+            border-top: 10px solid $color-primary-light;
+            position: absolute;
+            bottom: 20px;
+            z-index: -1;
+            left: 36px;
+            transition: all 0.2s ease;
+        }
+
+        &.active,
+        &:hover,
+        &:focus {
+            &:before {
+                content: "";
+                width: calc(100% - 60px);
+            }
         }
     }
 }
