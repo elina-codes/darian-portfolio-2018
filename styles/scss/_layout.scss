@@ -1,0 +1,10 @@
+section {
+    &:nth-child(odd) {
+        background-color: $color-grey-light;
+    }
+}
+
+.wrapper {
+    max-width: $section-width;
+    padding: 10%;
+}

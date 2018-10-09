@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    a {
+        font-family: $font-family-headings;
+        color: inherit;
+        display: block;
+        padding: 10px 30px;
+
+        &.active {
+            color: $color-primary;
+        }
+    }
+}
