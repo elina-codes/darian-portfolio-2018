@@ -12,6 +12,10 @@ h1,
     @media #{$screen-large} {
         font-size: $font-size-xxl - 64px;
     }
+
+    @media #{$screen-extra-small} {
+        font-size: 50px;
+    }
 }
 h2,
 .h2 {
@@ -25,6 +29,10 @@ h2,
 
     @media #{$screen-medium} {
         font-size: $font-size-xl - 18px;
+    }
+
+    @media #{$screen-extra-small} {
+        font-size: $font-size-xl - 30px;
     }
 }
 h3,

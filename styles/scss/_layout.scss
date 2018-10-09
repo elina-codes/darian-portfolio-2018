@@ -12,6 +12,10 @@ section {
     max-width: $section-width;
     padding: 100px 10%;
     margin: 0 auto;
+
+    @media #{$screen-extra-small} {
+        padding: 40px 5%;
+    }
 }
 
 .grid {

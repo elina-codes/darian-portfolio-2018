@@ -26,6 +26,7 @@ nav {
         display: flex;
         align-items: center;
         position: relative;
+        font-size: $font-size-md;
 
         &:before {
             content: "";
