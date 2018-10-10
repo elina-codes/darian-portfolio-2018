@@ -270,7 +270,7 @@ body {
       transition: opacity 0.2s ease;
       z-index: 8; }
     body.open-nav {
-      transform: translateX(300px); }
+      transform: translateX(200px); }
       body.open-nav:after {
         opacity: 0.9; } }
 
@@ -300,10 +300,10 @@ nav {
       bottom: 0;
       display: block;
       background: white;
-      width: 300px;
+      width: 200px;
       border-right: 1px solid #f2f2f2;
       padding: 20px 0;
-      transform: translateX(-300px);
+      transform: translateX(-200px);
       transition: transform 0.2s ease; } }
   nav a {
     font-family: "Teko", sans-serif;

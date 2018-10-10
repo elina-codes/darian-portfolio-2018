@@ -17,7 +17,7 @@ body {
         }
 
         &.open-nav {
-            transform: translateX(300px);
+            transform: translateX(200px);
 
             &:after {
                 opacity: 0.9;
@@ -54,10 +54,10 @@ nav {
         bottom: 0;
         display: block;
         background: white;
-        width: 300px;
+        width: 200px;
         border-right: 1px solid $color-grey-light;
         padding: 20px 0;
-        transform: translateX(-300px);
+        transform: translateX(-200px);
         transition: transform 0.2s ease;
     }
 
