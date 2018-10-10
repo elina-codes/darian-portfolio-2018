@@ -1,5 +1,5 @@
-$color-primary: #4285f4;
-$color-primary-light: lighten($color-primary, 30%);
+$color-primary: #2c8ab6;
+$color-primary-light: lighten($color-primary, 45%);
 $color-grey: #9c9c9c;
 $color-grey-light: #f2f2f2;
 $color-black: #111;
@@ -7,10 +7,11 @@ $color-black: #111;
 $font-family-headings: "Teko", sans-serif;
 $font-family-main: "Roboto Slab", serif;
 
-$font-size-xxl: 140px;
-$font-size-xl: 64px;
+$font-size-huge: 140px;
+$font-size-xxl: 64px;
+$font-size-xl: 50px;
 $font-size-lg: 36px;
-$font-size-md: 21px;
+$font-size-md: 24px;
 $font-size-sm: 18px;
 $font-size-xs: 16px;
 
@@ -22,3 +23,5 @@ $screen-large: "only screen and (max-width: 1600px)";
 $screen-medium: "only screen and (max-width: 1024px)";
 $screen-small: "only screen and (max-width: 800px)";
 $screen-extra-small: "only screen and (max-width: 400px)";
+
+$screen-medium-min: "only screen and (min-width: 1025px)";

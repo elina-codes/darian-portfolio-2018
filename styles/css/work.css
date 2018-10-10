@@ -366,187 +366,45 @@ footer {
   height: 60px;
   transition: all 0.2s ease; }
 
-#home {
-  background-image: url("../../images/darian_bg.jpg");
-  background-color: #2c8ab6;
-  background-blend-mode: luminosity;
-  filter: FlipH;
-  color: white;
-  text-align: right;
-  text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
-  position: relative; }
-  #home .wrapper {
-    padding: 10vw 10%;
-    position: relative;
-    z-index: 1; }
-  #home:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background: black;
-    opacity: 0.5; }
+@media only screen and (min-width: 1025px) {
+  .body--work h3 {
+    line-height: 1.1; } }
 
-.home__title {
-  text-align: inherit;
-  margin-bottom: 0;
-  line-height: 1;
-  font-weight: 500;
-  color: inherit; }
-
-.home__subtitle {
-  text-align: inherit;
-  line-height: 1;
-  font-weight: 100;
-  color: inherit;
-  margin-bottom: 0; }
-
-#what-i-do img {
-  max-height: 150px;
-  max-width: 250px;
-  display: block;
-  margin: 0 auto 50px; }
-  @media only screen and (max-width: 1024px) {
-    #what-i-do img {
-      margin-bottom: 20px; } }
-
-#what-i-do .grid {
-  grid-column-gap: 80px; }
-  @media only screen and (max-width: 1024px) {
-    #what-i-do .grid {
-      display: block; } }
-  @media only screen and (max-width: 1024px) {
-    #what-i-do .grid__item {
-      margin: 0 auto 40px;
-      max-width: 600px; } }
-
-#what-i-do h3 {
-  position: relative;
-  display: inline-block; }
-  #what-i-do h3:before {
-    content: "";
-    width: calc(100% + 4px);
-    border-top: 10px solid #d3eaf4;
-    position: absolute;
-    bottom: 30%;
-    z-index: -1;
-    left: -2px;
-    transition: all 0.2s ease; }
-
-@media only screen and (max-width: 1024px) {
-  .work__grid {
-    grid-template-columns: 1fr 1fr; } }
-
-@media only screen and (max-width: 800px) {
-  .work__grid {
-    grid-template-columns: 1fr; } }
-
-.work__grid__item {
-  background: white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  position: relative; }
-  .work__grid__item:before {
-    content: "";
-    display: block;
-    background-image: url("../../images/darian-face.jpg");
-    width: 180px;
-    height: 180px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 100%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    opacity: 0;
-    transition: all 0.2s ease;
-    z-index: 1; }
-  .work__grid__item:hover .work__image {
-    filter: blur(20px); }
-  .work__grid__item:hover:before {
-    opacity: 1;
-    transform: translate(-50%, -50%); }
-  .work__grid__item__details {
-    padding: 20px;
-    text-align: center; }
-  .work__grid__item h3 {
-    margin: 0;
-    line-height: 1; }
-  .work__grid__item p {
-    font-size: 18px; }
-
-.work__image {
-  background-size: cover;
-  background-position: center center;
-  padding-bottom: 68%;
-  transition: all 0.2s ease;
-  position: relative; }
-
-#experience {
+.body--work section {
   text-align: left; }
-
-.experience-container {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-left: 20px; }
-
-.experience-item {
-  grid-template-columns: 2fr 4fr; }
-  @media only screen and (max-width: 800px) {
-    .experience-item {
-      display: block; } }
-  .experience-item:not(:last-child) {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #f2f2f2; }
-    @media only screen and (max-width: 800px) {
-      .experience-item:not(:last-child) {
-        margin-bottom: 30px;
-        padding-bottom: 30px; } }
-  @media only screen and (max-width: 800px) {
-    .experience-item__date {
-      display: inline-block; } }
-  @media only screen and (max-width: 400px) {
-    .experience-item__date {
-      display: block; } }
-  .experience-item__company {
-    line-height: 1;
-    position: relative;
-    display: inline-block; }
-    @media only screen and (max-width: 800px) {
-      .experience-item__company {
-        display: inline-block;
-        font-size: 24px;
-        opacity: 0.8; }
-        .experience-item__company:before {
-          content: "|";
-          margin-right: 10px;
-          margin-left: 10px;
-          color: #f2f2f2;
-          border: none; } }
-    @media only screen and (max-width: 400px) {
-      .experience-item__company:before {
-        content: none; } }
-  .experience-item__position {
-    line-height: 1;
-    margin-bottom: 0.2em;
-    position: relative;
-    display: inline-block;
-    font-weight: 100; }
-    .experience-item__position:before {
-      content: "";
-      width: calc(100% + 4px);
-      border-top: 10px solid #d3eaf4;
-      position: absolute;
-      bottom: 10%;
-      z-index: -1;
-      left: -2px;
-      transition: all 0.2s ease; }
-  .experience-item__duties {
-    font-size: 18px; }
+  .body--work section .grid {
+    grid-template-areas: "text image";
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px; }
     @media only screen and (max-width: 1024px) {
-      .experience-item__duties {
-        font-size: 16px; } }
+      .body--work section .grid {
+        grid-template-columns: 1fr 1fr; } }
+    @media only screen and (max-width: 800px) {
+      .body--work section .grid {
+        display: block; } }
+  .body--work section:nth-child(odd) .grid {
+    grid-template-areas: "image text"; }
+    @media only screen and (min-width: 1025px) {
+      .body--work section:nth-child(odd) .grid {
+        grid-template-columns: 2fr 1fr; } }
+
+.body--work .work__header {
+  background-image: url(../../images/OtherlyImages.jpg);
+  background-color: #018ada;
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 1000px 0 700px -100px rgba(242, 242, 242, 0.95); }
+  .body--work .work__header__title {
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-align: left; }
+
+.body--work .work__text {
+  grid-area: text; }
+
+.body--work .work__image {
+  grid-area: image; }
+  @media only screen and (max-width: 800px) {
+    .body--work .work__image {
+      margin-top: 40px; } }

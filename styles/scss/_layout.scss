@@ -10,8 +10,12 @@ section {
 
 .wrapper {
     max-width: $section-width;
-    padding: 100px 10%;
+    padding: 100px 5%;
     margin: 0 auto;
+
+    &--short {
+        padding: 40px 5%;
+    }
 
     @media #{$screen-extra-small} {
         padding: 40px 5%;
@@ -26,4 +30,8 @@ section {
     &__item {
         color: inherit;
     }
+}
+
+.section__title {
+    text-align: center;
 }

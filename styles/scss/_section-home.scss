@@ -1,9 +1,29 @@
 #home {
     background-image: url("../../images/darian_bg.jpg");
     background-color: $color-primary;
-    background-blend-mode: multiply;
+    background-blend-mode: luminosity;
+    filter: FlipH;
     color: white;
     text-align: right;
+    text-shadow: 1px 1px 12px rgba(black, 0.2);
+    position: relative;
+
+    .wrapper {
+        padding: 10vw 10%;
+        position: relative;
+        z-index: 1;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: black;
+        opacity: 0.5;
+    }
 }
 
 .home {

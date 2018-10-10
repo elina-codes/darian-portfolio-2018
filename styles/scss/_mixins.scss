@@ -1,0 +1,10 @@
+@mixin highlight($bottom: 10%, $left: -2px, $width: calc(100% + 4px)) {
+    content: "";
+    width: $width;
+    border-top: 10px solid $color-primary-light;
+    position: absolute;
+    bottom: $bottom;
+    z-index: -1;
+    left: $left;
+    transition: all 0.2s ease;
+}

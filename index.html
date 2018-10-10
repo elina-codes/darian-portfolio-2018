@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Darian Grant | UX Designer</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Teko:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Teko:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/css/main.css">
+    <script src="/scripts/main.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">What I do</a>
-            <a href="#">Work</a>
-            <a href="#">Experience</a>
-            <a href="#">Resources</a>
+            <a href="#"><span>Home</span></a>
+            <a href="#what-i-do"><span>What I do</span></a>
+            <a href="#work"><span>Work</span></a>
+            <a href="#experience"><span>Experience</span></a>
+            <a href="#contact"><span>Contact</span></a>
         </nav>
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" onclick="toggleMobileNav()">MENU</button>
     </header>
 
     <main>
@@ -30,27 +32,31 @@
         </section>
         <section id="what-i-do">
             <div class="wrapper">
-                <h2>What I do</h2>
+                <h2 class="section__title">What I do</h2>
                 <div class="grid">
                     <div class="grid__item">
                         <img src="images/notes.svg" alt="" class="what-i-do__img">
                         <h3>Set Goals</h3>
-                        <p>After the strategy and goals are defined, I conduct user research through various quantitative
-                            and qualitative methods, tailored to each project, to ensure a deep understanding of your target
+                        <p>After the strategy and goals are defined, I conduct user research through various
+                            quantitative
+                            and qualitative methods, tailored to each project, to ensure a deep understanding of your
+                            target
                             audience.
                         </p>
                     </div>
                     <div class="grid__item">
                         <img src="images/dashboard.svg" alt="" class="what-i-do__img">
                         <h3>Adapt the Process</h3>
-                        <p>With a new understanding of your users, I then design for your target audience to get them from
+                        <p>With a new understanding of your users, I then design for your target audience to get them
+                            from
                             point A to point B as intuitively as possible, while hitting your KPIs.
                         </p>
                     </div>
                     <div class="grid__item">
                         <img src="images/rocket.svg" alt="" class="what-i-do__img">
                         <h3>UX it All</h3>
-                        <p>I then test my designs through various methods, reiterating where necessary, then work with my
+                        <p>I then test my designs through various methods, reiterating where necessary, then work with
+                            my
                             team to produce it while keeping them happy and engaged.
                         </p>
                     </div>
@@ -59,7 +65,7 @@
         </section>
         <section id="work">
             <div class="wrapper">
-                <h2>Work</h2>
+                <h2 class="section__title">Work</h2>
                 <div class="work__grid grid">
                     <a class="work__grid__item grid__item" href="#">
                         <div style="background-image: url('images/OtherlyImages.jpg')" class="work__image"></div>
@@ -129,7 +135,7 @@
         </section>
         <section id="experience">
             <div class="wrapper">
-                <h2>Experience</h2>
+                <h2 class="section__title">Experience</h2>
                 <div class="experience-container">
                     <div class="grid experience-item">
                         <div class="grid__item experience-item__title">
@@ -138,8 +144,10 @@
                         </div>
                         <div class="grid__item experience-item__details">
                             <h3 class="experience-item__position">UX Strategist</h3>
-                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi, maxime
+                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi,
+                                maxime
                                 doloribus quo commodi at optio aliquid deserunt vitae. Enim.</div>
                         </div>
                     </div>
@@ -151,8 +159,10 @@
                         </div>
                         <div class="grid__item experience-item__details">
                             <h3 class="experience-item__position">Lead UX Designer / Researcher</h3>
-                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi, maxime
+                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi,
+                                maxime
                                 doloribus quo commodi at optio aliquid deserunt vitae. Enim.</div>
                         </div>
                     </div>
@@ -164,8 +174,10 @@
                         </div>
                         <div class="grid__item experience-item__details">
                             <h3 class="experience-item__position">UX Designer</h3>
-                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi, maxime
+                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi,
+                                maxime
                                 doloribus quo commodi at optio aliquid deserunt vitae. Enim.</div>
                         </div>
                     </div>
@@ -177,8 +189,10 @@
                         </div>
                         <div class="grid__item experience-item__details">
                             <h3 class="experience-item__position">Lead UX Designer</h3>
-                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi, maxime
+                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi,
+                                maxime
                                 doloribus quo commodi at optio aliquid deserunt vitae. Enim.</div>
                         </div>
                     </div>
@@ -190,8 +204,10 @@
                         </div>
                         <div class="grid__item experience-item__details">
                             <h3 class="experience-item__position">UX Designer</h3>
-                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi, maxime
+                            <div class="experience-item__duties">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Rem aperiam debitis, quae, expedita autem magnam facere maiores asperiores sint modi,
+                                maxime
                                 doloribus quo commodi at optio aliquid deserunt vitae. Enim.</div>
                         </div>
                     </div>
@@ -201,7 +217,7 @@
 
         <!-- <section id="resources">
             <div class="wrapper">
-                <h2>Resources</h2>
+                <h2 class="section__title">Resources</h2>
                 <div class="grid experience-item">
                 </div>
             </div>
@@ -210,8 +226,12 @@
 
     <footer>
         <div class="wrapper">
-            <h2>Contact Me</h2>
-            <div class="grid">
+            <h2 class="section__title">Contact Me</h2>
+            <div class="footer__icons">
+                <a href="#" class="footer__link"><img src="/images/resume-icon.svg" alt="" class="footer__icon"></a>
+                <a href="https://www.linkedin.com/in/dariangrant/" rel="noopener" target="_blank" class="footer__link"><img
+                        src="/images/linkedin-circle.svg" alt="" class="footer__icon"></a>
+                <a href="mailto:darian@uxitall.com" class="footer__link"><img src="/images/email.svg" alt="" class="footer__icon"></a>
             </div>
         </div>
     </footer>

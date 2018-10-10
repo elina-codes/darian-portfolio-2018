@@ -1,8 +1,4 @@
-@import "reset";
-@import "vars";
-@import "base";
-@import "layout";
-@import "navigation";
+@import "common";
 
 // sections
 @import "section-home";
@@ -10,4 +6,3 @@
 @import "section-work";
 @import "section-experience";
 
-@import "footer";

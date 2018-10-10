@@ -28,14 +28,10 @@
     }
 
     &__date {
-        line-height: 1.2;
-        margin-bottom: 0.5em;
-
         @media #{$screen-small} {
             display: inline-block;
         }
         @media #{$screen-extra-small} {
-            margin-bottom: 0;
             display: block;
         }
     }
@@ -71,16 +67,10 @@
         margin-bottom: 0.2em;
         position: relative;
         display: inline-block;
+        font-weight: 100;
 
         &:before {
-            content: "";
-            width: 98%;
-            border-top: 10px solid $color-primary-light;
-            position: absolute;
-            bottom: 10%;
-            z-index: -1;
-            left: 5%;
-            transition: all 0.2s ease;
+            @include highlight(10%);
         }
     }
 

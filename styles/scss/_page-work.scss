@@ -1,0 +1,64 @@
+.body--work {
+    h3 {
+        @media #{$screen-medium-min} {
+            line-height: 1.1;
+        }
+    }
+
+    section {
+        text-align: left;
+
+        .grid {
+            grid-template-areas: "text image";
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 60px;
+
+            @media #{$screen-medium} {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media #{$screen-small} {
+                display: block;
+            }
+        }
+
+        &:nth-child(odd) {
+            .grid {
+                grid-template-areas: "image text";
+
+                @media #{$screen-medium-min} {
+                    grid-template-columns: 2fr 1fr;
+                }
+            }
+        }
+    }
+
+    .work {
+        &__header {
+            background-image: url(../../images/OtherlyImages.jpg);
+            background-color: #018ada;
+            background-blend-mode: luminosity;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 1000px 0 700px -100px rgba(242, 242, 242, 0.95);
+
+            &__title {
+                line-height: 1.2;
+                margin-bottom: 0;
+                text-align: left;
+            }
+        }
+
+        &__text {
+            grid-area: text;
+        }
+
+        &__image {
+            grid-area: image;
+
+            @media #{$screen-small} {
+                margin-top: 40px;
+            }
+        }
+    }
+}

@@ -4,13 +4,13 @@
 
 h1,
 .h1 {
-    font-size: $font-size-xxl;
+    font-size: $font-size-huge;
     font-family: $font-family-headings;
     text-transform: uppercase;
     color: inherit;
 
     @media #{$screen-large} {
-        font-size: $font-size-xxl - 64px;
+        font-size: $font-size-huge - 64px;
     }
 
     @media #{$screen-extra-small} {
@@ -19,20 +19,20 @@ h1,
 }
 h2,
 .h2 {
-    font-size: $font-size-xl;
+    font-size: $font-size-xxl;
     font-family: $font-family-headings;
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 0.8em;
     color: inherit;
-    text-align: center;
+    line-height: 1;
 
     @media #{$screen-medium} {
-        font-size: $font-size-xl - 18px;
+        font-size: $font-size-xl;
     }
 
     @media #{$screen-extra-small} {
-        font-size: $font-size-xl - 30px;
+        font-size: $font-size-lg;
     }
 }
 h3,
@@ -52,9 +52,10 @@ h4,
 .h4 {
     font-size: $font-size-md;
     font-family: $font-family-headings;
-    margin-bottom: inherit;
-    line-height: inherit;
+    margin-bottom: 0;
+    line-height: 1.1;
     color: $color-grey;
+    text-transform: uppercase;
 }
 h5,
 .h5 {
@@ -69,11 +70,19 @@ p {
     &:not(:last-child) {
         margin-bottom: 1em;
     }
+
+    + h3,
+    + .h3,
+    + h2,
+    + .h2 {
+        margin-top: 1em;
+    }
 }
 
 a {
     color: $color-primary;
     text-decoration: none;
+    font-weight: 400;
 }
 
 body {
@@ -94,4 +103,8 @@ body {
 img {
     display: block;
     max-width: 100%;
+}
+
+.center {
+    text-align: center;
 }

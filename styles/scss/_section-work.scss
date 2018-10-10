@@ -9,10 +9,35 @@
     &__item {
         background: white;
         box-shadow: 2px 2px 2px rgba(black, 0.1);
+        position: relative;
 
-        &:hover .work__image {
-            background-color: $color-primary;
-            background-blend-mode: multiply;
+        &:before {
+            content: "";
+            display: block;
+            background-image: url("../../images/darian-face.jpg");
+            width: 180px;
+            height: 180px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 100%;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            opacity: 0;
+            transition: all 0.2s ease;
+            z-index: 1;
+        }
+
+        &:hover {
+            .work__image {
+                filter: blur(20px);
+            }
+
+            &:before {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
         }
 
         &__details {
@@ -36,4 +61,5 @@
     background-position: center center;
     padding-bottom: 68%;
     transition: all 0.2s ease;
+    position: relative;
 }

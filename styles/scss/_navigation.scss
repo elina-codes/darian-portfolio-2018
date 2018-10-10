@@ -1,5 +1,29 @@
 body {
-    margin-top: 60px;
+    padding-top: 60px;
+    transition: transform 0.2s ease;
+
+    @media #{$screen-medium} {
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: darken($color-primary, 35%);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            z-index: 8;
+        }
+
+        &.open-nav {
+            transform: translateX(300px);
+
+            &:after {
+                opacity: 0.9;
+            }
+        }
+    }
 }
 
 header {
@@ -10,6 +34,7 @@ header {
     right: 0;
     border-bottom: 1px solid $color-grey-light;
     z-index: 9;
+    height: 60px;
 }
 
 nav {
@@ -17,7 +42,24 @@ nav {
     letter-spacing: 3px;
     font-weight: 400;
     text-transform: uppercase;
-    height: 60px;
+
+    @media #{$screen-medium-min} {
+        height: 60px;
+    }
+
+    @media #{$screen-medium} {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background: white;
+        width: 300px;
+        border-right: 1px solid $color-grey-light;
+        padding: 20px 0;
+        transform: translateX(-300px);
+        transition: transform 0.2s ease;
+    }
 
     a {
         font-family: $font-family-headings;
@@ -25,27 +67,45 @@ nav {
         padding: 10px 30px;
         display: flex;
         align-items: center;
-        position: relative;
         font-size: $font-size-md;
 
-        &:before {
-            content: "";
-            width: 0;
-            border-top: 10px solid $color-primary-light;
-            position: absolute;
-            bottom: 20px;
-            z-index: -1;
-            left: 36px;
-            transition: all 0.2s ease;
+        span {
+            display: inline-block;
+            position: relative;
+            &:before {
+                @include highlight(10px, -2px, 0);
+            }
         }
 
         &.active,
         &:hover,
         &:focus {
-            &:before {
+            span:before {
                 content: "";
-                width: calc(100% - 60px);
+                width: calc(100% + 4px);
             }
         }
+    }
+}
+
+.mobile-nav-toggle {
+    appearance: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+        outline: none;
+    }
+
+    @media #{$screen-medium-min} {
+        display: none;
     }
 }
