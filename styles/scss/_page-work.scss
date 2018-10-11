@@ -22,7 +22,7 @@
             }
         }
 
-        &:nth-child(odd) {
+        &:nth-child(odd):not(.next-steps) {
             .grid {
                 grid-template-areas: "image text";
 

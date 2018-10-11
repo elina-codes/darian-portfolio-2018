@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "autoprefixer": "postcss -u autoprefixer -r ./styles/scss/*",
+        "autoprefixer": "postcss -u autoprefixer -r ./styles/css/*",
         "build-css": "npm run autoprefixer && node-sass-chokidar ./styles/scss -o ./styles/css",
         "watch-css": "npm run build-css && node-sass-chokidar ./styles/scss -o ./styles/css --watch --recursive",
         "serve": "browser-sync start --server --files 'styles/css/*.css, scripts/*.js, *.html'"

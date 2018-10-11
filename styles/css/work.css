@@ -385,10 +385,10 @@ footer {
     @media only screen and (max-width: 800px) {
       .body--work section .grid {
         display: block; } }
-  .body--work section:nth-child(odd) .grid {
+  .body--work section:nth-child(odd):not(.next-steps) .grid {
     grid-template-areas: "image text"; }
     @media only screen and (min-width: 1025px) {
-      .body--work section:nth-child(odd) .grid {
+      .body--work section:nth-child(odd):not(.next-steps) .grid {
         grid-template-columns: 2fr 1fr; } }
 
 .body--work .work__header {
