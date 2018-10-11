@@ -207,6 +207,12 @@ a {
   text-decoration: none;
   font-weight: 400; }
 
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
 body {
   font-family: "Roboto Slab", serif;
   line-height: 1.8;
@@ -225,7 +231,13 @@ img {
   max-width: 100%; }
 
 .center {
-  text-align: center; }
+  text-align: center !important; }
+
+.lowercase {
+  text-transform: lowercase !important; }
+
+.no-margin-bottom {
+  margin-bottom: 0 !important; }
 
 section {
   background-position: center center;
