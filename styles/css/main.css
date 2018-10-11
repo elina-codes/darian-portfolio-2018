@@ -461,7 +461,8 @@ footer {
 .work__grid__item {
   background: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .work__grid__item:before {
     content: "";
     display: block;
