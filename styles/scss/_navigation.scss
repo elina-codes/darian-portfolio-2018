@@ -2,7 +2,7 @@ body {
     padding-top: 60px;
     transition: all 0.4s ease;
 
-    @media #{$screen-medium} {
+    @media #{$screen-small} {
         padding-top: 45px;
 
         &.open-nav {
@@ -22,7 +22,7 @@ header {
     z-index: 9;
     height: 60px;
 
-    @media #{$screen-medium} {
+    @media #{$screen-small} {
         height: 45px;
     }
 }
@@ -33,11 +33,11 @@ nav {
     font-weight: 400;
     text-transform: uppercase;
 
-    @media #{$screen-medium-min} {
+    @media #{$screen-small-min} {
         height: 60px;
     }
 
-    @media #{$screen-medium} {
+    @media #{$screen-small} {
         position: fixed;
         left: 0;
         top: 0;
@@ -63,7 +63,7 @@ nav {
         align-items: center;
         font-size: $font-size-md;
 
-        @media #{$screen-medium} {
+        @media #{$screen-small} {
             padding: 7px 30px;
         }
 
@@ -110,7 +110,7 @@ nav {
         outline: none;
     }
 
-    @media #{$screen-medium-min} {
+    @media #{$screen-small-min} {
         display: none;
     }
 }

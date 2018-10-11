@@ -269,7 +269,7 @@ section {
 body {
   padding-top: 60px;
   transition: all 0.4s ease; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 800px) {
     body {
       padding-top: 45px; }
       body.open-nav {
@@ -285,7 +285,7 @@ header {
   border-bottom: 1px solid #f2f2f2;
   z-index: 9;
   height: 60px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 800px) {
     header {
       height: 45px; } }
 
@@ -294,10 +294,10 @@ nav {
   letter-spacing: 3px;
   font-weight: 400;
   text-transform: uppercase; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 801px) {
     nav {
       height: 60px; } }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 800px) {
     nav {
       position: fixed;
       left: 0;
@@ -319,7 +319,7 @@ nav {
     display: flex;
     align-items: center;
     font-size: 24px; }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 800px) {
       nav a {
         padding: 7px 30px; } }
     nav a span {
@@ -356,7 +356,7 @@ nav {
   .mobile-nav-toggle:hover, .mobile-nav-toggle:focus {
     color: #2c8ab6;
     outline: none; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 801px) {
     .mobile-nav-toggle {
       display: none; } }
 
