@@ -85,6 +85,14 @@ a {
     font-weight: 400;
 }
 
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
 body {
     font-family: $font-family-main;
     line-height: 1.8;
@@ -106,5 +114,13 @@ img {
 }
 
 .center {
-    text-align: center;
+    text-align: center !important;
+}
+
+.lowercase {
+    text-transform: lowercase !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
 }
