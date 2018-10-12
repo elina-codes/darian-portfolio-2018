@@ -99,6 +99,7 @@ body {
     font-weight: 300;
     color: $color-black;
     font-size: $font-size-md;
+    background: $color-white;
 
     @media #{$screen-large} {
         font-size: $font-size-sm;

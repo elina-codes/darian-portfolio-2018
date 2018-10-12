@@ -74,7 +74,7 @@
         background-color: $color-primary;
         background-blend-mode: luminosity;
         box-shadow: inset 0 150px 0 100px rgba(darken($color-primary, 35%), 0.8);
-        color: white;
+        color: $color-white;
         position: relative;
 
         @media #{$screen-small} {
