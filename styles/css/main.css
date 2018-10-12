@@ -491,7 +491,8 @@ footer {
     margin: 0;
     line-height: 1; }
   .work__grid__item p {
-    font-size: 18px; }
+    font-size: 18px;
+    color: #9c9c9c; }
 
 .work__image {
   background-size: cover;
