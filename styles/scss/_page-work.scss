@@ -59,6 +59,10 @@
             @media #{$screen-small} {
                 margin-top: 40px;
             }
+
+            img + img {
+                margin-top: 5%;
+            }
         }
     }
 

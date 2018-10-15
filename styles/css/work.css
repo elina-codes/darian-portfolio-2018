@@ -424,6 +424,8 @@ footer {
   @media only screen and (max-width: 800px) {
     .body--work .work__image {
       margin-top: 40px; } }
+  .body--work .work__image img + img {
+    margin-top: 5%; }
 
 .body--work iframe {
   position: absolute;
