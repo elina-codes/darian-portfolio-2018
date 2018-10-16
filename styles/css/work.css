@@ -405,16 +405,18 @@ footer {
         grid-template-columns: 2fr 1fr; } }
 
 .body--work .work__header {
-  background-image: url(../../images/OtherlyImages.jpg);
-  background-color: #018ada;
+  background-image: url(../../images/darian-face.jpg);
+  background-color: #2c8ab6;
   background-blend-mode: luminosity;
   background-size: cover;
   background-position: center;
   box-shadow: inset 1000px 0 700px -100px rgba(242, 242, 242, 0.95); }
   .body--work .work__header__title {
-    line-height: 1.2;
-    margin-bottom: 0;
+    line-height: 1;
+    margin-bottom: -10px;
     text-align: left; }
+  .body--work .work__header__subtitle {
+    margin-left: 4px; }
 
 .body--work .work__text {
   grid-area: text; }

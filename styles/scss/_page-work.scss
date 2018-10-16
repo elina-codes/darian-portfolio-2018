@@ -35,17 +35,21 @@
 
     .work {
         &__header {
-            background-image: url(../../images/OtherlyImages.jpg);
-            background-color: #018ada;
+            background-image: url(../../images/darian-face.jpg);
+            background-color: $color-primary;
             background-blend-mode: luminosity;
             background-size: cover;
             background-position: center;
             box-shadow: inset 1000px 0 700px -100px rgba(242, 242, 242, 0.95);
 
             &__title {
-                line-height: 1.2;
-                margin-bottom: 0;
+                line-height: 1;
+                margin-bottom: -10px;
                 text-align: left;
+            }
+
+            &__subtitle {
+                margin-left: 4px;
             }
         }
 
