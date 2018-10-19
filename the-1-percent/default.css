@@ -1,0 +1,194 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0px 0 0 0;
+	padding: 0;
+	background: #E6E6E6 url(images/oldpaper2.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #666666;
+}
+
+#background {
+	width: auto;
+	height: 360px;
+	margin: 0 auto;
+	background: #2A2A2A url(images/website_bg.jpg);
+}
+
+
+/* Content */
+
+#iphone {
+	display:block;
+	float: right;
+	width: 330px;
+	height: 637px;
+	background: #FFFFFF;
+	/*border: 1px solid #E6E6E6;*/
+	position: relative;
+	left: 0px;
+	top: 110px;
+	z-index: 2;
+	background: transparent url(images/nexus5.png);
+	background-repeat: no-repeat;
+}
+
+#logo {
+	display:block;
+	float: left;
+	width: 420px;
+	height: 249px;
+	background: #FFFFFF;
+	/*border: 1px solid #E6E6E6;*/
+	position: relative;
+	left: 90px;
+	top: 20px;
+	z-index: 2;
+	background: transparent url(images/1percentlogo.png);
+	background-repeat: no-repeat;
+}
+
+#logo2 {
+	width: 420px;
+	height: 249px;
+	background: #FFFFFF;
+	/*border: 1px solid #E6E6E6;*/
+	position: relative;
+	top: 20px;
+	z-index: 2;
+	margin-left: auto ;
+    margin-right: auto ;
+	background: transparent url(images/1percentlogo.png);
+	background-repeat: no-repeat;
+}
+
+/* Sidebar */
+
+h1 {
+color:#000000;
+}
+
+h3 {
+color:#000000;
+}
+
+p {
+color:#000000;
+}
+
+li {
+color:#000000;
+}
+
+
+#maincontent {
+	float: left;
+	width: 520px;
+	height: 413px;
+	background: #FFFFFF;
+	padding: 5px 30px 0px 30px;
+	font-family:Arial, Helvetica, sans-serif;
+	position: relative;
+	left: 0px;
+	top: 50px;
+	z-index: 2;
+	background: transparent url(images/description2.png);
+	background-repeat: no-repeat;
+
+}
+
+#termscontent {
+	width: 820px;
+	height: auto;
+	background: #FFFFFF;
+	padding: 5px 30px 20px 30px;
+	font-family:Arial, Helvetica, sans-serif;
+	position: relative;
+	left: 0px;
+	top: 50px;
+	z-index: 2;
+	margin-left: auto ;
+    margin-right: auto ;
+	background: #FFFFFF url(images/termsbg.png);
+}
+
+#links li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 5px 0 0;
+  color: #000000;
+ }
+
+/*#emptybar {
+	position: relative;
+	left: 0px;
+	top: 20px;
+	z-index: 2;
+}*/
+
+/* Footer */
+
+
+#footer {
+	width: auto;
+	background: transparent url(images/footer_bg.png);
+	position: relative;
+	left: 0px;
+	top: 100px;
+	z-index: 2;
+}
+
+#footerbox {
+	width: 955px;
+	margin: 0 auto;
+	height: 40px;
+	padding: 20px 0px 0px 0px;
+	color:#FFFFFF;
+}
+
+#termsfooter {
+	width: auto;
+	background: transparent url(images/footer_bg.png);
+	position: relative;
+	left: 0px;
+	top: 1950px;
+	z-index: 2;
+}
+
+#termsfooterbox {
+	width: 955px;
+	margin: 0 auto;
+	height: 40px;
+	padding: 20px 0px 0px 0px;
+	color:#FFFFFF;
+}
+
+a {
+	color:#FFFFFF;
+}
+
+  .legal_links {
+  	float: right;
+	padding: 0px 20px 0px 0px;
+
+  }
+  
+  .copyright {
+  	float: center;
+	padding: 0px 0px 0px 20px;
+
+  }
+
+/* Page */
+#page {
+	width: 955px;
+	margin: 0 auto;
+	/*background: #FFFFFF;*/
+}
+
