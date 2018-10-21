@@ -4,6 +4,7 @@
     }
     @media #{$screen-small} {
         grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
 
     &__item {
