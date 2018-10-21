@@ -8,6 +8,11 @@
         @media #{$screen-medium} {
             margin-bottom: 20px;
         }
+
+        @media #{$screen-small} {
+            max-height: 90px;
+            max-width: 110px;
+        }
     }
 
     .grid {
