@@ -8,19 +8,19 @@
     <title>Otherly | UX It All</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Teko:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="../styles/css/work.css">
-    <script src="../scripts/main.js"></script>
+    <script defer src="../scripts/main.js"></script>
 </head>
 
 <body class="body--work">
     <header>
-        <nav>
+        <nav id="js--mobile-nav">
             <a href="../index.html"><span>Home</span></a>
             <a href="../index.html#what-i-do"><span>What I do</span></a>
             <a href="../index.html#work" class="active"><span>Work</span></a>
             <a href="../index.html#experience"><span>Experience</span></a>
             <a href="#contact"><span>Contact</span></a>
         </nav>
-        <button id="mobile-nav-toggle" class="mobile-nav-toggle" onclick="toggleMobileNav()">MENU</button>
+        <button id="js--mobile-nav-toggle" class="mobile-nav-toggle">MENU</button>
     </header>
 
     <main>
@@ -262,7 +262,7 @@
         </div>
     </footer>
 
-    <div id="js--mobile-nav-overlay" class="mobile-nav-overlay" onclick="closeMobileNav()"></div>
+    <div id="js--mobile-nav-overlay" class="mobile-nav-overlay"></div>
 </body>
 
 </html>
