@@ -127,6 +127,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 * {
   box-sizing: border-box; }
 
@@ -272,7 +278,8 @@ body {
   transition: all 0.4s ease; }
   @media only screen and (max-width: 800px) {
     body {
-      padding-top: 45px; }
+      padding-top: 45px;
+      position: relative; }
       body.open-nav {
         margin-left: 200px;
         margin-right: -200px; } }
@@ -360,6 +367,20 @@ nav {
   @media only screen and (min-width: 801px) {
     .mobile-nav-toggle {
       display: none; } }
+
+@media only screen and (max-width: 800px) {
+  .mobile-nav-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+    background: rgba(9, 29, 38, 0.8);
+    display: none;
+    animation: fadeIn 0.5s ease forwards; }
+    .open-nav .mobile-nav-overlay {
+      display: block; } }
 
 footer {
   background: #111;

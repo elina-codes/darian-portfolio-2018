@@ -4,6 +4,7 @@ body {
 
     @media #{$screen-small} {
         padding-top: 45px;
+        position: relative;
 
         &.open-nav {
             margin-left: 200px;
@@ -86,31 +87,50 @@ nav {
     }
 }
 
-.mobile-nav-toggle {
-    appearance: none;
-    border: none;
-    font-family: $font-family-headings;
-    font-size: $font-size-sm;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    cursor: pointer;
-    background: $color-white;
-    border-right: 1px solid $color-grey-light;
-    transition: all 0.4s ease;
+.mobile-nav {
+    &-toggle {
+        appearance: none;
+        border: none;
+        font-family: $font-family-headings;
+        font-size: $font-size-sm;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+        background: $color-white;
+        border-right: 1px solid $color-grey-light;
+        transition: all 0.4s ease;
 
-    .open-nav & {
-        margin-left: 200px;
+        .open-nav & {
+            margin-left: 200px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+            outline: none;
+        }
+
+        @media #{$screen-small-min} {
+            display: none;
+        }
     }
+    &-overlay {
+        @media #{$screen-small} {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 8;
+            background: rgba($color-primary-dark, 0.8);
+            display: none;
+            animation: fadeIn 0.5s ease forwards;
 
-    &:hover,
-    &:focus {
-        color: $color-primary;
-        outline: none;
-    }
-
-    @media #{$screen-small-min} {
-        display: none;
+            .open-nav & {
+                display: block;
+            }
+        }
     }
 }
