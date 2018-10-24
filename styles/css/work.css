@@ -217,7 +217,7 @@ em {
   font-style: italic; }
 
 strong {
-  font-weight: bold; }
+  font-weight: 500; }
 
 body {
   font-family: "Roboto Slab", serif;
@@ -426,18 +426,23 @@ footer {
         grid-template-columns: 2fr 1fr; } }
 
 .body--work .work__header {
-  background-image: url(../../images/darian-face.jpg);
+  background-image: url(../../images/rsz-mountain-bg.jpg);
   background-color: #2c8ab6;
   background-blend-mode: luminosity;
   background-size: cover;
-  background-position: center;
-  box-shadow: inset 1000px 0 700px -100px rgba(242, 242, 242, 0.95); }
+  background-position: center; }
   .body--work .work__header__title {
     line-height: 1;
     margin-bottom: -10px;
-    text-align: left; }
+    text-align: left;
+    color: white; }
   .body--work .work__header__subtitle {
-    margin-left: 4px; }
+    margin-left: 4px;
+    color: white;
+    opacity: 0.8; }
+
+.body--work .work__description {
+  margin-bottom: 30px; }
 
 .body--work .work__text {
   grid-area: text; }

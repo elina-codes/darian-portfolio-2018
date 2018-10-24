@@ -35,22 +35,33 @@
 
     .work {
         &__header {
-            background-image: url(../../images/darian-face.jpg);
+            // DARIAN! CHANGE THE IMAGE BELOW
+            background-image: url(../../images/rsz-mountain-bg.jpg);
             background-color: $color-primary;
             background-blend-mode: luminosity;
+            // background-size: auto;
+            // background-repeat: repeat;
+            // AND UNCOMMENT THE LINES BELOW
             background-size: cover;
             background-position: center;
-            box-shadow: inset 1000px 0 700px -100px rgba(242, 242, 242, 0.95);
+            // box-shadow: inset 1000px 0 700px -100px rgba(242, 242, 242, 0.95);
 
             &__title {
                 line-height: 1;
                 margin-bottom: -10px;
                 text-align: left;
+                color: white;
             }
 
             &__subtitle {
                 margin-left: 4px;
+                color: white;
+                opacity: 0.8;
             }
+        }
+
+        &__description {
+            margin-bottom: 30px;
         }
 
         &__text {
