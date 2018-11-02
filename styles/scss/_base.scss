@@ -150,3 +150,32 @@ img {
 .no-margin-bottom {
     margin-bottom: 0 !important;
 }
+
+table {
+    border: 1px solid $color-grey;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: $color-white;
+
+    thead {
+        background-color: $color-primary-light;
+        font-family: $font-family-headings;
+        text-transform: uppercase;
+        font-size: $font-size-md;
+        letter-spacing: 1px;
+    }
+
+    tbody {
+        tr {
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-grey-light;
+            }
+        }
+    }
+
+    th,
+    td {
+        padding: 10px 20px;
+    }
+}
