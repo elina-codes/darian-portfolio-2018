@@ -461,20 +461,32 @@ footer {
         grid-template-columns: 2fr 1fr; } }
 
 .body--work .work__header {
-  background-image: url(../../images/rsz-mountain-bg.jpg);
+  background-image: url("../../images/darian_bg.jpg");
   background-color: #2c8ab6;
   background-blend-mode: luminosity;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
+  .body--work .work__header:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: black;
+    opacity: 0.5; }
   .body--work .work__header__title {
     line-height: 1;
     margin-bottom: -10px;
     text-align: left;
-    color: white; }
+    color: white;
+    position: relative; }
   .body--work .work__header__subtitle {
     margin-left: 4px;
     color: white;
-    opacity: 0.8; }
+    opacity: 0.8;
+    position: relative; }
 
 .body--work .work__description {
   margin-bottom: 30px; }

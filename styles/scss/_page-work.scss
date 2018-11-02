@@ -36,7 +36,7 @@
     .work {
         &__header {
             // DARIAN! CHANGE THE IMAGE BELOW
-            background-image: url(../../images/rsz-mountain-bg.jpg);
+            background-image: url("../../images/darian_bg.jpg");
             background-color: $color-primary;
             background-blend-mode: luminosity;
             // background-size: auto;
@@ -44,19 +44,33 @@
             // AND UNCOMMENT THE LINES BELOW
             background-size: cover;
             background-position: center;
+            position: relative;
             // box-shadow: inset 1000px 0 700px -100px rgba(242, 242, 242, 0.95);
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background: black;
+                opacity: 0.5;
+            }
 
             &__title {
                 line-height: 1;
                 margin-bottom: -10px;
                 text-align: left;
                 color: white;
+                position: relative;
             }
 
             &__subtitle {
                 margin-left: 4px;
                 color: white;
                 opacity: 0.8;
+                position: relative;
             }
         }
 
