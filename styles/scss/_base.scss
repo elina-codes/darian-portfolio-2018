@@ -59,11 +59,29 @@ h4,
 }
 h5,
 .h5 {
-    font-size: $font-size-sm;
+    font-size: $font-size-md + 4px;
+    font-family: $font-family-headings;
+    text-transform: uppercase;
 }
 h6,
 .h6 {
     font-size: $font-size-xs;
+}
+
+ul {
+    padding-left: 30px;
+
+    &:not(:last-child) {
+        margin-bottom: 1em;
+    }
+
+    li {
+        list-style-type: disc;
+
+        &:not(:last-child) {
+            margin-bottom: 1em;
+        }
+    }
 }
 
 p {
