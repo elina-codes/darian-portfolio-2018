@@ -548,7 +548,9 @@ footer {
     transform: translate(-50%, -50%); }
   .work__grid__item__details {
     padding: 20px;
-    text-align: center; }
+    text-align: center;
+    background: white;
+    position: relative; }
   .work__grid__item h3 {
     margin: 0;
     line-height: 1; }
@@ -561,7 +563,8 @@ footer {
   background-position: center center;
   padding-bottom: 68%;
   transition: all 0.2s ease;
-  position: relative; }
+  position: relative;
+  border-bottom: 1px solid #f2f2f2; }
 
 #experience {
   text-align: left; }

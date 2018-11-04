@@ -45,6 +45,8 @@
         &__details {
             padding: 20px;
             text-align: center;
+            background: $color-white;
+            position: relative;
         }
 
         h3 {
@@ -65,4 +67,5 @@
     padding-bottom: 68%;
     transition: all 0.2s ease;
     position: relative;
+    border-bottom: 1px solid $color-grey-light;
 }

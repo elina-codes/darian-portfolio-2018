@@ -89,8 +89,11 @@
                 margin-top: 40px;
             }
 
-            img + img {
-                margin-top: 5%;
+            img {
+                border: 1px solid lighten($color-grey, 25%);
+                + img {
+                    margin-top: 5%;
+                }
             }
         }
     }
