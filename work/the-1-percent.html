@@ -1,159 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js"
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-WHJWRZS");
+        </script>
+        <!-- End Google Tag Manager -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>The 1% | UX It All</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Teko:300,400,500" rel="stylesheet" />
+        <link rel="stylesheet" href="../styles/css/work.css" />
+        <script defer src="../scripts/main.js"></script>
+    </head>
 
-<head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-WHJWRZS');
-    </script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The 1% | UX It All</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Teko:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/css/work.css">
-    <script defer src="../scripts/main.js"></script>
-</head>
+    <body class="body--work">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHJWRZS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header>
+            <nav id="js--mobile-nav">
+                <a href="../index.html"><span>Home</span></a>
+                <a href="../index.html#what-i-do"><span>What I do</span></a>
+                <a href="../index.html#work" class="active"><span>Work</span></a>
+                <a href="../index.html#experience"><span>Experience</span></a>
+                <a href="#contact"><span>Contact</span></a>
+            </nav>
+            <button id="js--mobile-nav-toggle" class="mobile-nav-toggle">MENU</button>
+        </header>
 
-<body class="body--work">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHJWRZS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <nav id="js--mobile-nav">
-            <a href="../index.html"><span>Home</span></a>
-            <a href="../index.html#what-i-do"><span>What I do</span></a>
-            <a href="../index.html#work" class="active"><span>Work</span></a>
-            <a href="../index.html#experience"><span>Experience</span></a>
-            <a href="#contact"><span>Contact</span></a>
-        </nav>
-        <button id="js--mobile-nav-toggle" class="mobile-nav-toggle">MENU</button>
-    </header>
+        <main>
+            <section class="work__header">
+                <div class="wrapper wrapper--short">
+                    <h1 class="work__header__title">The 1%</h1>
+                    <span class="h4 work__header__subtitle">Personal project</span>
+                </div>
+            </section>
+            <section>
+                <div class="grid wrapper">
+                    <div class="grid__item work__text">
+                        <h3>Overview</h3>
+                        <p>
+                            This was a chat application that I
+                            <strong>designed as an experiment to learn more about spending behaviour</strong>
+                            in mobile games.
+                        </p>
 
-    <main>
-        <section class="work__header">
-            <div class="wrapper wrapper--short">
-                <h1 class="work__header__title">The 1%</h1>
-                <span class="h4 work__header__subtitle">Personal project</span>
+                        <h3>Hypothesis</h3>
+                        <p>
+                            My hypothesis was that
+                            <strong>people will spend money to increase their status in games, and will spend a ridiculous amount in order to guard and keep that status.</strong>
+                        </p>
+
+                        <p>
+                            I needed to control the environment as much as possible, so I needed to answer "what is the least amount of 'game' that I can make, that encourages people to spend money
+                            for their status?".
+                        </p>
+                    </div>
+                    <div class="grid__item work__image"><img src="../images/the-1-percent-01.jpg" alt="A close up of two mockups from the 1 Percent app." /></div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid wrapper">
+                    <div class="grid__item work__text">
+                        <h3>The "Game"</h3>
+                        <p>
+                            It's a simple chat application, but
+                            <strong>every time you send a message, it displays your name, your location, and your level. If you want to increase your level, you must pay a dollar</strong>
+                            .
+                        </p>
+
+                        <p>
+                            Messages are posted in white text into the chat, but
+                            <strong>the top 1% of the users who have the highest level will have their message displayed in blue text</strong>
+                            . That's it. If someone bumps you out of the 1% by having a higher level than you, you lose the blue text on your messages.
+                            <strong>So the idea is that people that get bumped out of the 1% will then spend more to get back into the 1%.</strong>
+                        </p>
+                    </div>
+                    <div class="grid__item work__image"><img src="../images/the-1-percent-02.jpg" alt="A few mockups of the major screens in the 1 Percent." /></div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid wrapper">
+                    <div class="grid__item work__text">
+                        <h3>Wireframes</h3>
+                        <p>As this was a project I came up with, I knew I would need some help as I'm not great at UI Design, and know nothing about implementation.</p>
+
+                        <p>
+                            <strong>Here you can see some of the wireframes I made and communicated to the UI Designer, who made the final mockups</strong>
+                            . It is a small app and there are only about 5 screens and a few edge cases I had to consider.
+                        </p>
+                    </div>
+                    <div class="grid__item work__image"><img src="../images/the-1-percent-04.png" alt="Two wireframes of the The 1 Percent app." /></div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid wrapper">
+                    <div class="grid__item work__text">
+                        <h3>Extra Stuff</h3>
+                        <p></p>
+                        <p>
+                            I ended up finding someone to build this with me, and
+                            <strong>while the backend was being worked on, I busied myself with everything else in the process of releasing it to the world.</strong>
+                        </p>
+                        <p>I taught myself how to build the front end, I researched the submission process, how microtransactions work, legal stuff, and the website.</p>
+                        <p><a href="../the-1-percent/index.html" target="blank">Here is the splash page we were going to use online.</a></p>
+                    </div>
+                    <div class="grid__item work__image"><img src="../images/the-1-percent-05.jpg" alt="A screenshot of the splash page for the The 1 Percent app." /></div>
+                </div>
+            </section>
+
+            <section class="next-steps">
+                <div class="grid wrapper">
+                    <div class="grid__item work__text"><h2>Outcome</h2></div>
+                    <div class="grid__item work__image">
+                        <p>
+                            Though the app itself was never completed, I would love to see it finished one day. The designs are done, so if you would like to see the rest of them, or want to build
+                            this yourself, just ask and I would be happy to share.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="more-projects">
+                <a href="/work/whats-your-thing.html" class="more-projects__project more-projects__project--previous" style="background-image: url('/images/OtherlyImages.jpg')">
+                    <span class="more-projects__project__title">What's Your Thing</span>
+                </a>
+                <a href="/work/fifa-ultimate-team.html" class="more-projects__project more-projects__project--next" style="background-image: url('/images/OtherlyImages.jpg')">
+                    <span class="more-projects__project__title">FIFA Ultimate Team</span>
+                </a>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <div class="wrapper">
+                <h2 class="section__title">Contact Me</h2>
+                <div class="footer__icons">
+                    <!-- <a href="#" class="footer__link"><img src="/images/resume-icon.svg" alt="" class="footer__icon"></a> -->
+                    <a href="https://www.linkedin.com/in/dariangrant/" rel="noopener" target="_blank" class="footer__link"><img src="/images/linkedin-circle.svg" alt="" class="footer__icon" /></a>
+
+                    <a href="mailto:darian@uxitall.com" class="footer__link"><img src="/images/email.svg" alt="" class="footer__icon" /></a>
+                </div>
             </div>
-        </section>
-        <section>
-            <div class="grid wrapper">
-                <div class="grid__item work__text">
-                    <h3>Overview</h3>
-                    <p>This was a chat application that I <strong>designed as an experiment to learn more about spending
-                            behaviour</strong> in mobile games.</p>
+        </footer>
 
-                    <h3>Hypothesis</h3>
-                    <p>My hypothesis was that <strong>people will spend money to increase their status in games, and will spend
-                        a ridiculous amount in order to guard and keep that status.</strong></p>
-
-                    <p>I needed to control the environment as much as possible, so I needed to answer "what is the
-                        least amount of 'game' that I can make, that encourages people to spend money for their
-                        status?".</p>
-
-                </div>
-                <div class="grid__item work__image">
-                    <img src="../images/the-1-percent-01.jpg" alt="A close up of two mockups from the 1 Percent app.">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="grid wrapper">
-                <div class="grid__item work__text">
-                    <h3>The "Game"</h3>
-                    <p>It's a simple chat application, but <strong>every time you send a message, it displays your name, your
-                        location, and your level. If you want to increase your level, you must pay a dollar</strong>.</p>
-
-                    <p>Messages are posted in white text into the chat, but <strong>the top 1% of the users who have the
-                        highest level will have their message displayed in blue text</strong>. That's it. If someone bumps you
-                        out of the 1% by having a higher level than you, you lose the blue text on your messages. <strong>So
-                        the idea is that people that get bumped out of the 1% will then spend more to get back into the 1%.</strong></p>
-                </div>
-                <div class="grid__item work__image">
-                    <img src="../images/the-1-percent-02.jpg" alt="A few mockups of the major screens in the 1 Percent.">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="grid wrapper">
-                <div class="grid__item work__text">
-                    <h3>Wireframes</h3>
-                    <p>As this was a project I came up with, I knew I would need some help as I'm not great at UI
-                        Design, and know nothing about implementation.</p>
-
-                    <p><strong>Here you can see some of the wireframes I made and communicated to the UI Designer, who made
-                        the final mockups</strong>. It is a small app and there are only about 5 screens and a few edge
-                        cases I had to consider.</p>
-                </div>
-                <div class="grid__item work__image">
-                    <img src="../images/the-1-percent-04.png" alt="Two wireframes of the The 1 Percent app.">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="grid wrapper">
-                <div class="grid__item work__text">
-                    <h3>Extra Stuff</h3>
-                    <p>
-                        <p>I ended up finding someone to build this with me, and <strong>while the backend was being worked on, I busied myself with everything else in the process of releasing it to the world.</strong></p>
-                        <p>I taught myself how to build the front end, I researched the submission process, how
-                            microtransactions work, legal stuff, and the website.</p>
-                        <p><a href="../the-1-percent/index.html" target="blank">Here is the splash page we were going
-                                to use online.</a></p>
-                </div>
-                <div class="grid__item work__image">
-                    <img src="../images/the-1-percent-05.jpg" alt="A screenshot of the splash page for the The 1 Percent app.">
-                </div>
-            </div>
-        </section>
-
-        <section class="next-steps">
-            <div class="grid wrapper">
-                <div class="grid__item work__text">
-                    <h2>Outcome</h2>
-                </div>
-                <div class="grid__item work__image">
-                    <p>Though the app itself was never completed, I would love to see it finished one day. The designs
-                        are done, so if you would like to see the rest of them, or want to build this yourself, just
-                        ask and I would be happy to share.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="more-projects">
-            <a href="/work/otherly.html" class="more-projects__project more-projects__project--previous" style="background-image: url('/images/OtherlyImages.jpg')">
-                <span class="more-projects__project__title">Party in my Dorm</span>
-            </a>
-            <a href="/work/otherly.html" class="more-projects__project more-projects__project--next" style="background-image: url('/images/OtherlyImages.jpg')">
-                <span class="more-projects__project__title">FIFA 11</span>
-            </a>
-        </section>
-    </main>
-
-    <footer id="contact">
-        <div class="wrapper">
-            <h2 class="section__title">Contact Me</h2>
-            <div class="footer__icons">
-                <!--<a href="#" class="footer__link"><img src="/images/resume-icon.svg" alt="" class="footer__icon"></a>-->
-                <a href="https://www.linkedin.com/in/dariangrant/" rel="noopener" target="_blank" class="footer__link"><img
-                        src="/images/linkedin-circle.svg" alt="" class="footer__icon"></a>
-                <a href="mailto:darian@uxitall.com" class="footer__link"><img src="/images/email.svg" alt="" class="footer__icon"></a>
-            </div>
-        </div>
-    </footer>
-
-    <div id="js--mobile-nav-overlay" class="mobile-nav-overlay"></div>
-</body>
-
+        <div id="js--mobile-nav-overlay" class="mobile-nav-overlay"></div>
+    </body>
 </html>
