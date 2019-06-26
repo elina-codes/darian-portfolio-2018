@@ -11,7 +11,7 @@
         .grid {
             grid-template-areas: "text image";
             grid-template-columns: 1fr 2fr;
-            grid-gap: 60px;
+            grid-column-gap: 60px;
 
             @media #{$screen-medium} {
                 grid-template-columns: 1fr 1fr;
@@ -20,10 +20,18 @@
             @media #{$screen-small} {
                 display: block;
             }
+
+            &.half-half {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            &__title {
+                grid-column: span 2;
+            }
         }
 
         &:nth-child(odd):not(.next-steps) {
-            .grid {
+            .grid:not(.half-half) {
                 grid-template-areas: "image text";
 
                 @media #{$screen-medium-min} {

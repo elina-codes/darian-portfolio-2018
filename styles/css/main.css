@@ -201,6 +201,15 @@ h6,
 .h6 {
   font-size: 16px; }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto; }
+
 ul {
   padding-left: 30px;
   max-width: 850px;
@@ -211,7 +220,16 @@ ul {
   ul li {
     list-style-type: disc; }
     ul li:not(:last-child) {
-      margin-bottom: 1em; }
+      margin-bottom: 0.5em; }
+
+ol {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto; }
+  ol:not(:last-child) {
+    margin-bottom: 1em; }
+  ol li:not(:last-child) {
+    margin-bottom: 0.5em; }
 
 p {
   max-width: 850px;
@@ -301,7 +319,7 @@ section {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px; }
+  grid-column-gap: 40px; }
   .grid__item {
     color: inherit; }
 
