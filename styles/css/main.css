@@ -229,7 +229,7 @@ ol {
   ol:not(:last-child) {
     margin-bottom: 1em; }
   ol li:not(:last-child) {
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.7em; }
 
 p {
   max-width: 850px;
