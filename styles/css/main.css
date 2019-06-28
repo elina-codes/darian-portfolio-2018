@@ -275,6 +275,10 @@ img {
 .center {
   text-align: center !important; }
 
+img.center {
+  margin-left: auto;
+  margin-right: auto; }
+
 .lowercase {
   text-transform: lowercase !important; }
 
@@ -319,17 +323,20 @@ section {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 40px; }
+  grid-gap: 40px; }
   .grid__item {
     color: inherit; }
 
 .section__title {
   text-align: center; }
+  .section__title + .section__description {
+    margin-top: -2em;
+    margin-bottom: 3em; }
 
 body {
   padding-top: 60px;
   transition: all 0.4s ease; }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     body {
       padding-top: 45px;
       position: relative; }
@@ -346,19 +353,22 @@ header {
   border-bottom: 1px solid #f2f2f2;
   z-index: 9;
   height: 60px; }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     header {
       height: 45px; } }
 
 nav {
-  display: flex;
   letter-spacing: 3px;
-  font-weight: 400;
-  text-transform: uppercase; }
-  @media only screen and (min-width: 801px) {
+  text-transform: uppercase;
+  font-weight: 400; }
+  @media only screen and (min-width: 901px) {
+    nav {
+      display: flex;
+      justify-content: space-between; } }
+  @media only screen and (min-width: 901px) {
     nav {
       height: 60px; } }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     nav {
       position: fixed;
       left: 0;
@@ -373,6 +383,15 @@ nav {
       transition: all 0.4s ease; }
       .open-nav nav {
         transform: translateX(0); } }
+  @media only screen and (min-width: 901px) {
+    nav .nav-primary {
+      display: flex; } }
+  @media only screen and (max-width: 900px) {
+    nav .nav-secondary {
+      border-top: 16px solid #eee; } }
+  @media only screen and (min-width: 901px) {
+    nav .nav-secondary {
+      border-left: 16px solid #eee; } }
   nav a {
     font-family: "Teko", sans-serif;
     color: inherit;
@@ -380,7 +399,7 @@ nav {
     display: flex;
     align-items: center;
     font-size: 24px; }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       nav a {
         padding: 7px 30px; } }
     nav a span {
@@ -388,16 +407,18 @@ nav {
       position: relative; }
       nav a span:before {
         content: "";
-        width: 0;
-        border-top: 10px solid #d3eaf4;
+        width: calc(100% + 10px);
+        border-top: 20px solid #d3eaf4;
         position: absolute;
-        bottom: 10px;
+        bottom: 13px;
         z-index: -1;
-        left: -2px;
-        transition: all 0.2s ease; }
+        left: -7px;
+        transition: all 0.2s ease;
+        transform: skew(-5deg, -5deg);
+        opacity: 0; }
     nav a.active span:before, nav a:hover span:before, nav a:focus span:before {
       content: "";
-      width: calc(100% + 4px); }
+      opacity: 1; }
 
 .mobile-nav-toggle {
   appearance: none;
@@ -417,11 +438,11 @@ nav {
   .mobile-nav-toggle:hover, .mobile-nav-toggle:focus {
     color: #2c8ab6;
     outline: none; }
-  @media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 901px) {
     .mobile-nav-toggle {
       display: none; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .mobile-nav-overlay {
     position: absolute;
     top: 0;
@@ -501,7 +522,7 @@ footer {
   @media only screen and (max-width: 1024px) {
     #what-i-do img {
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     #what-i-do img {
       max-height: 90px;
       max-width: 110px; } }
@@ -521,19 +542,20 @@ footer {
   display: inline-block; }
   #what-i-do h3:before {
     content: "";
-    width: calc(100% + 4px);
-    border-top: 10px solid #d3eaf4;
+    width: calc(100% + 10px);
+    border-top: 20px solid #d3eaf4;
     position: absolute;
-    bottom: 30%;
+    bottom: 25px;
     z-index: -1;
-    left: -2px;
-    transition: all 0.2s ease; }
+    left: -7px;
+    transition: all 0.2s ease;
+    transform: skew(-5deg, -5deg); }
 
 @media only screen and (max-width: 1024px) {
   .work__grid {
     grid-template-columns: 1fr 1fr; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .work__grid {
     grid-template-columns: 1fr;
     grid-gap: 20px; } }
@@ -595,18 +617,18 @@ footer {
 
 .experience-item {
   grid-template-columns: 2fr 4fr; }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     .experience-item {
       display: block; } }
   .experience-item:not(:last-child) {
     margin-bottom: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid #f2f2f2; }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       .experience-item:not(:last-child) {
         margin-bottom: 30px;
         padding-bottom: 30px; } }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     .experience-item__date {
       display: inline-block; } }
   @media only screen and (max-width: 400px) {
@@ -616,7 +638,7 @@ footer {
     line-height: 1;
     position: relative;
     display: inline-block; }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       .experience-item__company {
         display: inline-block;
         font-size: 24px;
@@ -635,16 +657,15 @@ footer {
     margin-bottom: 0.2em;
     position: relative;
     display: inline-block;
-    font-weight: 100; }
-    .experience-item__position:before {
-      content: "";
-      width: calc(100% + 4px);
-      border-top: 10px solid #d3eaf4;
-      position: absolute;
-      bottom: 10%;
-      z-index: -1;
-      left: -2px;
-      transition: all 0.2s ease; }
+    text-transform: none;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: normal;
+    font-size: 24px;
+    margin-bottom: 0.5em; }
+    @media only screen and (max-width: 900px) {
+      .experience-item__position {
+        font-size: 18px;
+        margin-bottom: 1em; } }
   .experience-item__duties {
     font-size: 18px; }
     @media only screen and (max-width: 1024px) {
