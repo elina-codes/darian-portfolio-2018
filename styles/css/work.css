@@ -303,6 +303,14 @@ table {
   table td {
     padding: 10px 20px; }
 
+img.icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: #d3eaf4;
+  height: 30px;
+  vertical-align: sub;
+  opacity: 0.4; }
+
 section {
   background-position: center center;
   background-size: cover;
@@ -497,7 +505,8 @@ footer {
     .body--work section .grid.half-half {
       grid-template-columns: 1fr 1fr; }
     .body--work section .grid__title {
-      grid-column: span 2; }
+      grid-column: span 2;
+      margin-left: 0; }
     @media only screen and (max-width: 900px) {
       .body--work section .grid__item img {
         margin-top: 40px; } }

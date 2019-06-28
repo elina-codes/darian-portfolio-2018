@@ -210,3 +210,12 @@ table {
         padding: 10px 20px;
     }
 }
+
+img.icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: $color-primary-light;
+    height: 30px;
+    vertical-align: sub;
+    opacity: 0.4;
+}
