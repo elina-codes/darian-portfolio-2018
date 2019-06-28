@@ -33,9 +33,5 @@
     h3 {
         position: relative;
         display: inline-block;
-
-        &:before {
-            @include highlight(25px);
-        }
     }
 }

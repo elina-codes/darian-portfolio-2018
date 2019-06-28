@@ -92,7 +92,15 @@ nav {
             display: inline-block;
             position: relative;
             &:before {
-                @include highlight();
+                content: "";
+                width: calc(100% + 10px);
+                border-top: 14px solid $color-primary-light;
+                position: absolute;
+                bottom: 12px;
+                z-index: -1;
+                left: -7px;
+                transition: all 0.2s ease;
+                transform: skew(-8deg, -8deg);
                 opacity: 0;
             }
         }

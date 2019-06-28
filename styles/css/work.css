@@ -321,6 +321,9 @@ img.icon {
   vertical-align: sub;
   opacity: 0.4; }
 
+.hide {
+  display: none !important; }
+
 section {
   background-position: center center;
   background-size: cover;
@@ -426,13 +429,13 @@ nav {
       nav a span:before {
         content: "";
         width: calc(100% + 10px);
-        border-top: 20px solid #d3eaf4;
+        border-top: 14px solid #d3eaf4;
         position: absolute;
-        bottom: 13px;
+        bottom: 12px;
         z-index: -1;
         left: -7px;
         transition: all 0.2s ease;
-        transform: skew(-5deg, -5deg);
+        transform: skew(-8deg, -8deg);
         opacity: 0; }
     nav a.active span:before, nav a:hover span:before, nav a:focus span:before {
       content: "";
