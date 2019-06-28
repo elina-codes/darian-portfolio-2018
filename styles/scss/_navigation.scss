@@ -29,10 +29,14 @@ header {
 }
 
 nav {
-    display: flex;
     letter-spacing: 3px;
-    font-weight: 400;
     text-transform: uppercase;
+    font-weight: 400;
+
+    @media #{$screen-small-min} {
+        display: flex;
+        justify-content: space-between;
+    }
 
     @media #{$screen-small-min} {
         height: 60px;
@@ -56,6 +60,22 @@ nav {
         }
     }
 
+    .nav-primary {
+        @media #{$screen-small-min} {
+            display: flex;
+        }
+    }
+
+    .nav-secondary {
+        @media #{$screen-small} {
+            border-top: 16px solid #eee;
+        }
+
+        @media #{$screen-small-min} {
+            border-left: 16px solid #eee;
+        }
+    }
+
     a {
         font-family: $font-family-headings;
         color: inherit;
@@ -72,7 +92,8 @@ nav {
             display: inline-block;
             position: relative;
             &:before {
-                @include highlight(10px, -2px, 0);
+                @include highlight();
+                opacity: 0;
             }
         }
 
@@ -81,7 +102,7 @@ nav {
         &:focus {
             span:before {
                 content: "";
-                width: calc(100% + 4px);
+                opacity: 1;
             }
         }
     }

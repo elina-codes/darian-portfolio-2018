@@ -35,7 +35,7 @@
         display: inline-block;
 
         &:before {
-            @include highlight(30%);
+            @include highlight(25px);
         }
     }
 }

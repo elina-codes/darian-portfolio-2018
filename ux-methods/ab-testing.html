@@ -42,11 +42,16 @@
         <!-- End Google Tag Manager (noscript) -->
         <header>
             <nav id="js--mobile-nav">
-                <a href="../index.html"><span>Home</span></a>
-                <a href="../index.html#what-i-do"><span>What I do</span></a>
-                <a href="../index.html#work" class="active"><span>Work</span></a>
-                <a href="../index.html#experience"><span>Experience</span></a>
-                <a href="#contact"><span>Contact</span></a>
+                <div class="nav-primary">
+                    <a href="../index.html"><span>Home</span></a>
+                    <a href="../index.html#what-i-do"><span>What I do</span></a>
+                    <a href="../index.html#work"><span>Work</span></a>
+                    <a href="../index.html#experience"><span>Experience</span></a>
+                    <a href="#contact"><span>Contact</span></a>
+                </div>
+                <div class="nav-secondary">
+                    <a href="../ux-methods" class="active"><span>UX Methods</span></a>
+                </div>
             </nav>
             <button id="js--mobile-nav-toggle" class="mobile-nav-toggle">MENU</button>
         </header>
@@ -109,36 +114,44 @@
             </section>
 
             <section>
-                <div class="wrapper">
-                    <h3 class="center">How do you perform an A/B test?</h3>
-                    <ol>
-                        <li>
-                            <strong>Step 1:</strong>
-                            Determine your success metric. This may be time spent on your site, sales, conversions,
-                            e-mail signups, or number of support tickets submitted.
-                        </li>
-                        <li>
-                            <strong>Step 2:</strong>
-                            Determine the page element that needs to be altered and tested. This may be headline
-                            wording, call-to-action visibility, images, or any page element that has been ambiguous to
-                            test users.
-                        </li>
-                        <li>
-                            <strong>Step 3:</strong>
-                            Formulate a hypothesis regarding how to fix your problematic page element. Apply that fix to
-                            a new version (“version B”) of your site, leaving the original version (“version A”)
-                            unchanged.
-                        </li>
-                        <li>
-                            <strong>Step 4:</strong>
-                            Use an A/B testing tool to serve version B to a randomly chosen subset of users.
-                        </li>
-                        <li>
-                            <strong>Step 5:</strong>
-                            Run the test for approximately two weeks in order to reach a statistically significant
-                            number of users.
-                        </li>
-                    </ol>
+                <div class="grid wrapper">
+                    <div class="grid__item work__image">
+                        <h3>How do you perform an A/B test?</h3>
+                        <ol>
+                            <li>
+                                <strong>Step 1:</strong>
+                                Determine your success metric. This may be time spent on your site, sales, conversions,
+                                e-mail signups, or number of support tickets submitted.
+                            </li>
+                            <li>
+                                <strong>Step 2:</strong>
+                                Determine the page element that needs to be altered and tested. This may be headline
+                                wording, call-to-action visibility, images, or any page element that has been ambiguous
+                                to test users.
+                            </li>
+                            <li>
+                                <strong>Step 3:</strong>
+                                Formulate a hypothesis regarding how to fix your problematic page element. Apply that
+                                fix to a new version (“version B”) of your site, leaving the original version (“version
+                                A”) unchanged.
+                            </li>
+                            <li>
+                                <strong>Step 4:</strong>
+                                Use an A/B testing tool to serve version B to a randomly chosen subset of users.
+                            </li>
+                            <li>
+                                <strong>Step 5:</strong>
+                                Run the test for approximately two weeks in order to reach a statistically significant
+                                number of users.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="grid__item work__text">
+                        <img
+                            src="https://source.unsplash.com/random/880x600"
+                            alt="The final version of Otherly's mobile app"
+                        />
+                    </div>
                 </div>
             </section>
 

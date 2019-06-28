@@ -12,6 +12,7 @@
             grid-template-areas: "text image";
             grid-template-columns: 1fr 2fr;
             grid-column-gap: 60px;
+            grid-row-gap: 0;
 
             @media #{$screen-medium} {
                 grid-template-columns: 1fr 1fr;
@@ -27,6 +28,14 @@
 
             &__title {
                 grid-column: span 2;
+            }
+
+            &__item {
+                img {
+                    @media #{$screen-small} {
+                        margin-top: 40px;
+                    }
+                }
             }
         }
 
