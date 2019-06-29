@@ -17,13 +17,15 @@ mobileNavOverlay.onclick = closeMobileNav;
 mobileNav.addEventListener("click", function(e) {
   if (e.target && (e.target.nodeName == "SPAN" || e.target.nodeName == "A")) {
     closeMobileNav();
-    document
-      .querySelector("#js--mobile-nav a.active")
-      .classList.remove(activeClass);
+    document.querySelector("#js--mobile-nav a.active").classList.remove(activeClass);
     e.target.parentElement.classList.add(activeClass);
   }
 });
 
 if (!window.location.hostname.includes("uxitall")) {
   document.querySelector(".nav-secondary").classList.remove("hide");
+
+  Array.from(document.querySelectorAll("a"))
+    .filter(link => link.hostname === "localhost" && link.pathname.match(/\//g).length > 1)
+    .forEach(item => (item.href = item.href + ".html"));
 }
