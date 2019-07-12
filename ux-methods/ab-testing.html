@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Otherly | UX It All</title>
+    <title>A/B Testing | UX It All</title>
     <meta
       name="description"
-      content="UX Designer and Strategist in Vancouver, BC specializing in product strategy, user research, data driven design decisions, and increasing company UX maturity."
+      content="What is A/B Testing? This page will guide you through what it is, what you need, and how to perform an A/B Test. It also contains tips and additional resources."
     />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Teko:300,400,500" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/work.css" />
+    <link rel="stylesheet" href="/styles/methods.css" />
     <script defer src="/scripts/main.js"></script>
 
     <!-- Google Tag Manager -->
@@ -61,48 +61,46 @@
       <section>
         <div class="grid wrapper">
           <div class="grid__item work__text">
-            <h3>What is A/B Testing?</h3>
+            <h2>What is A/B Testing?</h2>
             <p>
-              A/B Testing, or Split Testing, is a method of testing one change on a page – the wording of a headline or the placement of a button, for
-              example – to see how it performs compared to the original. Users follow one URL and are either shown the original (version A, the
-              control) or redirected to an edited version (version B, the treatment).
+              A/B Testing, or Split Testing, is a method of testing one change on a page to see how it performs compared to the original. The idea is that you change only one variable, then show these two versions to two similarly sized audiences and analyze which one performed better over a specific period of time (long enough to make accurate conclusions about your results).
             </p>
             <p>
-              For information on testing multiple changes in different combinations, see Multivariate Testing.
+              Common things to A/B test are the wording of a headline, the color or placement of a button, or an image on the page. It can be even larger, such as adding a tutorial flow to the page. The point is that your test has to be controled and limited to one thing you are measuring so you can compare the metrics against the original version, then keep the changes that have a positive impact. A/B tests are valuable to a business because they're low in cost but can be high in reward.
             </p>
           </div>
           <div class="grid__item work__image">
-            <img src="/images/method-main-abtesting.jpg" alt="The final version of Otherly's mobile app" />
+            <img src="/images/method-main-abtesting.jpg" alt="An image of two similar highligher caps, side by side, positioned in the same way, but one is pink and the other is yellow." />
           </div>
         </div>
       </section>
 
       <section>
         <div class="grid wrapper half-half">
-          <h3 class="grid__title">What do you need to A/B test?</h3>
+          <h2 class="grid__title">What do you need to A/B test?</h2>
           <div class="grid__item">
-            <h5>
+            <h3>
               <img src="/images/svg/icon-time.svg" alt="Time" class="icon" />
-              Time:
-            </h5>
+              TIME
+            </h3>
 
             <ul>
-              <li>Preparation: 1 Day (depending on your organization)</li>
+              <li>Preparation: 1 Day</li>
               <li>Testing Time: 1-3 Weeks</li>
-              <li>Analysis: As quick as looking at a graph or table</li>
+              <li>Analysis: 30 minutes</li>
             </ul>
           </div>
           <div class="grid__item">
-            <h5>
+            <h3>
               <img src="/images/svg/icon-materials.svg" alt="Time" class="icon" />
-              Materials:
-            </h5>
+              MATERIALS
+            </h3>
 
             <ul>
               <li>
-                An editable version of your live site (this will depend on the platform on which your site is built and what testing tool you use)
+                Your live site, product, or app
               </li>
-              <li>A/B testing software subscription (see below for links)</li>
+              <li>Software that facilitates A/B tests and that is compatible with your site (see below for links)</li>
             </ul>
           </div>
         </div>
@@ -111,35 +109,47 @@
       <section>
         <div class="grid wrapper">
           <div class="grid__item work__image">
-            <h3>How do you perform an A/B test?</h3>
+            <h2>How do you run an A/B test?</h2>
             <ol>
               <li>
-                <strong>Step 1:</strong>
-                Determine your success metric. This may be time spent on your site, sales, conversions, e-mail signups, or number of support tickets
-                submitted.
+                <h3>Step 1: Determine your success metric</h3>
+                 This is very important, which is why it is the first step. This requires an understanding, or a baseline, of your current metrics. Look for areas that need improvement and target one of those. This may be time spent on your site, clicks on a button, sales, conversions, e-mail signups, or number of support tickets submitted. Try to keep it simple and only pick one. This may be called your "dependent variable".
               </li>
               <li>
-                <strong>Step 2:</strong>
-                Determine the page element that needs to be altered and tested. This may be headline wording, call-to-action visibility, images, or
-                any page element that has been ambiguous to test users.
+                <h3>Step 2: Determine what needs to be altered and tested</h3>
+                 Remember, to truly evaluate how effective a change is, you will want to isolate one variable and measure its performance -- otherwise, you can't be sure which one was responsible for changes in performance. Some common changes may be the wording of a headline or paragraph, button visibility or color, images, adding a tutorial flow, or anything else that you feel has been ambiguous to users. The element you decide to change here is also known as an "independent variable".
               </li>
               <li>
-                <strong>Step 3:</strong>
-                Formulate a hypothesis regarding how to fix your problematic page element. Apply that fix to a new version (“version B”) of your site,
-                leaving the original version (“version A”) unchanged.
+                <h3>Step 3: Formulate a hypothesis</h3>
+                Formulate a hypothesis regarding how to fix your problematic page element. What do you think will happen to the metric you want to affect if you change X to Y? Write that out.
+                <br/><br/>
+                Example: <br/>
+                We believe that by changing our blue "buy now" button to a bright red, we will increase clicks on it by 15%.         
               </li>
               <li>
-                <strong>Step 4:</strong>
-                Use an A/B testing tool to serve version B to a randomly chosen subset of users.
+                <h3>Step 4: Create a "control" and "challenger"</h3>
+                 Now you need to make two copies of your site, and apply the change to only one of them. The unaltered version of your site is called the "Control", and the one with the proposed fix from your hypothesis is called the "Challenger". 
               </li>
               <li>
-                <strong>Step 5:</strong>
-                Run the test for approximately two weeks in order to reach a statistically significant number of users.
+                <h3>Step 5: Split your sample groups equally and randomly</h3>
+                Now you will want to split your sample groups equally and randomly to ensure you get the most unbiased and conclusive results. There are many tools out there that will help make this an easy step for you (see below for links).
+              </li>
+              <li>
+                <h3>Step 6: Run the test on both versions</h3>
+                You should run the test for however long you need to in order to reach a statistically significant number of users. Sites with more usage may not need as long than a site with low usage. Some A/B testing tools also allow you to set limits or a percentage on the number of users that will see the altered version of your site. All of this can change the length of time your test may run, but when in doubt, run your test for around 2 weeks. It's important to run the Control and the Challenger at the same time so the results are not skewed by timing or seasonality, for example.
+              </li>
+              <li>
+                <h3>Step 7: Analyze the data and take action</h3>
+                Now that it's over, take a look at the data and compare it to your hypothesis. If there has been a positive change in the data, then keep the Challenger. If not, discard it.
+              </li>
+              <li>
+                <h3>Step 8: Start another A/B Test!</h3>
+                You're a pro now, so kick off another A/B test. Remember, these are easy to run, low risk, and high reward.
               </li>
             </ol>
           </div>
           <div class="grid__item work__text">
-            <img src="https://source.unsplash.com/random/880x600" alt="The final version of Otherly's mobile app" />
+            <img src="/images/method-second-abtesting.jpg" alt="An image of someone writing down notes in between two laptops displaying two different screens."/>
           </div>
         </div>
       </section>
@@ -147,22 +157,27 @@
       <section>
         <div class="grid wrapper">
           <div class="grid__item work__image">
-            <h3>Tips for A/B Testing</h3>
+            <h2>Tips for great A/B Testing</h2>
             <ul>
               <li>
+                Make sure you're only running one test at a time on any campaign. If you run more than one, you may not be able to trace which one is affecting the metric you are tracking.
+              </li>
+              <li>
+                Do not stop the test as soon as you see a statistically significant difference between the two pages. Continue the test until its scheduled end. This is especially important if you plan to publish results or your research is funded with grant money.
+              </li>
+              <li>
+                Serve both variations simultaneously in order to account for seasonal variables.
+            </li> 
+              <li>
+                Use an A/B testing tool. There are many out there that faciliate small changes on your site, with little-to-no dev work.
+                </li>
+                <li>
                 Serve the original version of the page to Google’s bots to avoid being penalized in search results.
-              </li>
-              <li>
-                Avoid the temptation to stop the test as soon as you see a statistically significant difference between the two pages. Continue the
-                test until its scheduled end. This is especially important if you plan to publish results or your research is funded with grant money.
-              </li>
-              <li>
-                Serve both versions to users concurrently in order to account for seasonal variables.
               </li>
             </ul>
           </div>
           <div class="grid__item work__text">
-            <img src="/images/method-second-abtesting.jpg" alt="The final version of Otherly's mobile app" />
+            <img src="/images/method-third-abtesting.jpg" alt="An image of two handheld gaming devices, side by side, positioned in the same way, but one is pink and the other is black." />
           </div>
         </div>
       </section>
@@ -170,12 +185,13 @@
       <section>
         <div class="wrapper">
           <div class="grid__item work__text">
-            <h3 class="fullwidth">More resources</h3>
+            <h2 class="fullwidth">EDIT - More resources for A/B Testing</h2>
             <ul class="fullwidth">
-              <li>Wikipedia: A/B testing</li>
+              <li>Hubspot: <a href="https://blog.hubspot.com/marketing/how-to-do-a-b-testing" target="blank">How to Do A/B Testing: A Checklist You'll Want to Bookmark</a></li>
+             <li>Wikipedia: A/B Testing</li>
               <li>Visual Website Optimizer: The Complete Guide to A/B Testing</li>
               <li>Smashing Magazine: The Ultimate Guide To A/B Testing</li>
-              <li>Oracle: A/B Testing Increases Conversion Rates</li>
+              <li>ADD TOOLS</li>
             </ul>
           </div>
         </div>
