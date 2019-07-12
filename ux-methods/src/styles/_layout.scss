@@ -1,0 +1,95 @@
+section {
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+
+  &:nth-child(odd) {
+    background-color: $color-grey-light;
+  }
+}
+
+.section__title {
+  text-align: center;
+
+  + .section__description {
+    margin-top: -2em;
+    margin-bottom: 3em;
+  }
+}
+
+.wrapper {
+  max-width: $section-width;
+  padding: 100px 5%;
+  margin: 0 auto;
+
+  &--short {
+    padding: 40px 5%;
+  }
+
+  @media #{$screen-extra-small} {
+    padding: 60px 5%;
+  }
+}
+
+// grid layout
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+
+  &__item {
+    color: inherit;
+  }
+}
+
+// grid layout for work and ux-methods
+.image__grid {
+  @media #{$screen-medium} {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media #{$screen-small} {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  &__item {
+    background: $color-white;
+    box-shadow: 2px 2px 2px rgba(black, 0.1);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .grid__image {
+        opacity: 0.6;
+      }
+    }
+
+    &__details {
+      padding: 20px;
+      text-align: center;
+      background: $color-white;
+      position: relative;
+    }
+
+    h3 {
+      margin: 0;
+      line-height: 1;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      color: $color-grey;
+    }
+  }
+
+  .grid__image {
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 68%;
+    transition: all 0.2s ease;
+    position: relative;
+    border-bottom: 1px solid $color-grey-light;
+    transition: all 0.2s ease;
+  }
+}

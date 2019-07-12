@@ -1,0 +1,37 @@
+#what-i-do {
+    img {
+        max-height: 150px;
+        max-width: 250px;
+        display: block;
+        margin: 0 auto 50px;
+
+        @media #{$screen-medium} {
+            margin-bottom: 20px;
+        }
+
+        @media #{$screen-small} {
+            max-height: 90px;
+            max-width: 110px;
+        }
+    }
+
+    .grid {
+        grid-column-gap: 80px;
+
+        @media #{$screen-medium} {
+            display: block;
+        }
+
+        &__item {
+            @media #{$screen-medium} {
+                margin: 0 auto 40px;
+                max-width: 600px;
+            }
+        }
+    }
+
+    h3 {
+        position: relative;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,30 @@
+$color-primary: #2c8ab6;
+$color-primary-light: lighten($color-primary, 45%);
+$color-primary-dark: darken($color-primary, 35%);
+$color-grey: #9c9c9c;
+$color-grey-light: #f2f2f2;
+$color-black: #111;
+$color-white: white;
+
+$font-family-headings: "Teko", sans-serif;
+$font-family-main: "Roboto Slab", serif;
+
+$font-size-huge: 140px;
+$font-size-xxl: 64px;
+$font-size-xl: 50px;
+$font-size-lg: 36px;
+$font-size-md: 24px;
+$font-size-sm: 18px;
+$font-size-xs: 16px;
+
+$section-width: 1800px;
+$content-width: 1000px;
+
+// media queries
+$screen-large: "only screen and (max-width: 1800px)";
+$screen-medium: "only screen and (max-width: 1024px)";
+$screen-small: "only screen and (max-width: 900px)";
+$screen-extra-small: "only screen and (max-width: 400px)";
+
+$screen-medium-min: "only screen and (min-width: 1025px)";
+$screen-small-min: "only screen and (min-width: 520px)";
