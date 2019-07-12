@@ -25,8 +25,6 @@ mobileNav.addEventListener("click", function(e) {
 });
 
 if (!window.location.hostname.includes("uxitall")) {
-  document.querySelector(".nav-secondary").classList.remove("hide");
-
   Array.from(document.querySelectorAll("a"))
     .filter(link => link.hostname === "localhost" && link.pathname.match(/\//g).length > 1)
     .forEach(item => (item.href = item.href + ".html"));
