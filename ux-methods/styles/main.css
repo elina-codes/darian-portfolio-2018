@@ -421,8 +421,8 @@ nav {
   text-transform: uppercase;
   font-weight: 400;
   display: flex;
-  justify-content: space-between;
-  height: 100%; }
+  height: 100%;
+  max-width: 1800px; }
   nav a {
     font-family: "Teko", sans-serif;
     color: inherit;

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://uxitall.com/</loc>
+  <lastmod>2019-07-12T23:57:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://uxitall.com/ab-testing/</loc>
+  <lastmod>2019-07-12T23:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxitall.com/competitive-analysis/</loc>
+  <lastmod>2019-07-12T23:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxitall.com/contextual-inquiry/</loc>
+  <lastmod>2019-07-12T23:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxitall.com/paper-prototype/</loc>
+  <lastmod>2019-07-12T23:57:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxitall.com/ux-strategy/</loc>
+  <lastmod>2019-07-12T23:57:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxitall.com/wireframes/</loc>
+  <lastmod>2019-07-12T23:57:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

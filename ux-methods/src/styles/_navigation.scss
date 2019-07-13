@@ -33,8 +33,8 @@ nav {
   text-transform: uppercase;
   font-weight: 400;
   display: flex;
-  justify-content: space-between;
   height: 100%;
+  max-width: $section-width;
 
   a {
     font-family: $font-family-headings;
